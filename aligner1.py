@@ -46,7 +46,7 @@ try:
 
     for s in SeqIO.parse(sys.argv[1], "fasta"):
         aligner = Aligner1(s)
-        print aligner.refseq
+        #print aligner.refseq
         break  # Stop after the fist sequence in the reference
     out = []
     for s in SeqIO.parse(sys.argv[2], "fasta"):
@@ -60,7 +60,7 @@ try:
         position = len(aligner.refseq._data)
         ''' For the forward strand '''
         for a in alignment:
-            if a[2] < 12:
+            if a[2] < 2*len(s):
                 continue
             t = a[1]._data.index(s.seq._data[0])
             if position > t :
@@ -99,7 +99,7 @@ try:
             if reverse_out != None :
                 out.append(reverse_out)
         else :
-            out.append(s.id + "* " + "0 " + "*" + " 0")
+            out.append(s.id + " * " + "0 " + "*" + " 0")
     with open('alignment1.txt','w') as f :
         for item in out:
             f.write("%s\n" % item)

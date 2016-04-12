@@ -45,7 +45,7 @@ try:
 
     for s in SeqIO.parse(sys.argv[1], "fasta"):
         aligner = Aligner1(s)
-        print aligner.refseq
+        #print aligner.refseq
         break  # Stop after the fist sequence in the reference
     out = []
 
