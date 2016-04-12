@@ -1,0 +1,15 @@
+For task 1 in the assignment, the number of reads that exactly align with the reference is ;
+218
+Out of them, the number of reads that align with the forward strand is: 
+	 134
+ The number of reads that align with the reverse strand is :
+	74
+
+ The distribution of the alignments are as follows : 
+no_of_alignments	read_count_with_no
+0					59:27%
+1					138:63%
+2					41:18%
+3					14:6%
+4					12:5%
+5					3:1%

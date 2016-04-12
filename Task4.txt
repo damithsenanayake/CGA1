@@ -1,0 +1,1 @@
+When run against ncbi blast, the output was given as "Escherichia coli str. K-12 substr. MG1655 strain JW5437-1, complete genome". Therefore it is an E-Coli genome. 

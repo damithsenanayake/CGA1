@@ -1,0 +1,24 @@
+For task 2 in the assignment, the number of reads that was considered is ;
+109
+Out of them, the number of reads that have concordant alignments: 
+	 81
+
+ The distribution of number of concordant alignments is as follows : 
+no_of_alignments	read_count_with_no
+0					28:25%
+1					47:43%
+2					20:18%
+3					5:4%
+4					6:5%
+5					1:0%
+9					1:0%
+18					1:0%
+
+It is notable that the number of read pairs with no alignments is 28 as it was 59 for exact alignment of the
+previous case. However, considering that this is only half the number of considerations (since a pair is considered
+as one), it may be noted that the number of non aligning cases may be about the same. However, the amount of alignments
+in a single pair seems to have increased, since this it means that there are multiple alignments possible for a given
+pair of reads combinatorially.Therefore, large numbers of alignments such as 18 and 9 can be seen.
+
+To further improve the specificity, we could also consider the concordance in terms of the distance between a pair of
+reads. This has not  been considered in this calculation.

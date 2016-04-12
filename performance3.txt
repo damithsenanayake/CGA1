@@ -1,0 +1,39 @@
+For task 3 in the assignment, all the reads are expected to align with the reference. This is expected as we are penalizing
+the inexact matchings in terms of a cost value. Therefore the total number of alignments in both forward and reverse strands is ;
+218
+
+ The distribution of the alignments are as follows : 
+no_of_alignments	read_count_with_no
+1					152
+2					55
+3					27
+4					39
+5					24
+6					31
+7					23
+8					22
+9					18
+10					12
+11					11
+12					5
+13					7
+14					2
+17					2
+18					1
+19					2
+21					1
+22					1
+26					1
+
+ The distribution of costs is as follows :
+cost read_count_with_cost
+0.0					211:0%
+1.0					222:69%
+2.0					3:25%
+Additionally, the statistics(weighted by the number of alignments between a read and the reference) of the alignment costs are as below:
+Highest observed cost = 2.0
+Median = 1.0
+Mean = 0.522935779817
+
+ It is also noteworthy that in some cases, a large number of alignments are reported with indel operations spanning a significant length
+of the reference. In this case, we need to control the output space by introducing a gap penalty (for gap initiation and continuation).
